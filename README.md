@@ -1,14 +1,35 @@
 # Tools and Production
 # Development Commentary Template
 
-## Project Outline (Suggested Word Count 500)
-- Provide a concise description of the project, including its core concept and purpose.  
-- Outline the initial goals or objectives you aim to achieve.  
-- Identify any anticipated challenges or potential issues that may arise during development.  
+## Project Outline 
 
-This project is a physics-based puzzle game in which players control a robot suit with a detachable bubble head. Spread across four levels, the game introduces players to various environmental challenges that interact with and change the properties of the bubble. The changing states of the bubble make up the core gameplay behaviour, allowing for unique and evolving puzzle mechanics throughout the game.
 
-Although I will be helping with general programming throughout the project, my main focus will be as an audio programmer. I want to create a responsive, high-quality sound experience that support's the games tones and mechanics.
+This project is a physics-based puzzle game in which players control a robot suit with a detachable bubble head, called 'The Last Drop'. The project was initially submitted as part of a game jam with the prompt 'Bubble'. Spread across four levels, the game introduces players to various environmental challenges that interact with and change the properties of the bubble. The changing states of the bubble make up the core gameplay behaviour, allowing for unique and evolving puzzle mechanics throughout the game.
+
+#### States:
+- Oil - Bubble can pick up oil which then allows it to be set on fire.
+- Sap - Bubble can pick up sap, dropping the sap will create a jumping pad.
+- Frozen - Bubble no longer floats, and instead behaves more like a ball.
+- Fire - Bubble is on fire and can destroy certain objects.
+
+<br>
+
+Narratively, the game will be told using a mixture of environmental storytelling and voice-over. A key character, an initially detached scientist, observes the robot's progress throughout the tests. As the game unfolds, she begins to notice the robot bubble shows signs of being sentient. By the final level she goes against protocol and frees the bubble out into the larger world. The player should feel the subtle bond developing between the bubble and the scientist over the course of the game.
+
+Although I will be helping with general programming throughout the project, my main focus will be as an audio programmer. I want to create a responsive, high-quality sound experience that support's the games tones and mechanics. Using Unreal Engine's MetaSounds, I will implement physics-driven procedural audio that reacts dynamically to the bubble's state, environmental changes and player interactions. I will be working alongside another audio programmer who will be producing music and ambience, which we will collaborate to implement into the game.
+
+#### Initial Goals
+- Designing and implementing sound that reflects the different bubble states
+- Creating environmental audio that supports the atmosphere of each level (windy, hot, cold)
+- Adding sound cues that guide the player during puzzle solving (correct/failed audio cues)
+- Creating a cohesive experience by working closesly with level designers to ensure audio aligns with visuals
+- Implementing voice-over for the scientist character which makes her feel natural and context-aware.
+
+#### Anticipated Challenges
+- Ensuring dynamic audio remains responsive across different gameplay scenarios and bubble state changes.
+- Balancing voice-over so it supports the story without becoming repetitive or intrusive.
+- Blending ambience with reactive gameplay audio
+- Working as a team to make sure the audio is cohesive with the gameplay and visuals. This will neeed the level designers to complete their levels in a timely manner.
 
 ## Research (Suggested Word Count 1,100)
 
