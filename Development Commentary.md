@@ -42,6 +42,24 @@ Although I will be helping with general programming throughout the project, my m
 - Analyse the game's approach, cross-referencing it with other sources such as articles or talks to support your analysis.  
 - Explain how these insights apply to your project and influence your decision-making process.  
 
+#### **Inside**
+
+Inside (2016) is a puzzle-platform game developed and published by Playdead. This was the original inspiration for the game so I thought it would be a good place to start my research. I have actually played the game myself before and really enjoyed the unsettling, minimalist atmosphere. The story is told entirely through the environment and sound design, since there aren't really any cutscenes or narration.
+
+Key features and Insights:
+- Environmental Storytelling
+    - No use of dialogue.
+    - Lighting used to guide player (used against enemies, but also used by enemies).
+    - Allows for players to interpret the story in their own way.
+- Pacing
+    - Gradual introduction of mechanics to allow player to learn.
+    - There aren't really any tutorials which deepends player immersion.
+- Atmosphere
+    - Lighting is harsh, with a lot of spotlights that make the player feel exposed and potentially in danger.
+    - Sound contributes to pacing, tension and emotional tone. A lot of it is very echoey to represent how tiny the player is compared to the building he is in.
+    - The visuals are very bleak and grey. There isn't much colour in the game which supports the dull, dystopian atmosphere. Colour is used selectively, such as highlighting buttons in puzzles by making them glow red.
+
+    
 ### Academic Sources
 - Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
 - Describe how the academic research applies to your project and shapes your design and development decisions.  
