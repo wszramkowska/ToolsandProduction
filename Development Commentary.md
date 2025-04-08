@@ -4,32 +4,20 @@
 ## Project Outline 
 
 
-This project is a physics-based puzzle game in which players control a robot suit with a detachable bubble head, called 'The Last Drop'. The project was initially submitted as part of a game jam with the prompt 'Bubble'. Spread across four levels, the game introduces players to various environmental challenges that interact with and change the properties of the bubble. The changing states of the bubble make up the core gameplay behaviour, allowing for unique and evolving puzzle mechanics throughout the game.
-
-#### States:
-- Oil - Bubble can pick up oil which then allows it to be set on fire.
-- Sap - Bubble can pick up sap, dropping the sap will create a jumping pad.
-- Frozen - Bubble no longer floats, and instead behaves more like a ball.
-- Fire - Bubble is on fire and can destroy certain objects.
-
-<br>
+This project is a physics-based puzzle game in which players control a robot suit with a detachable bubble head, called The Last Drop. The project was initially submitted as part of a game jam with the prompt Bubble. Spread across four levels, the game introduces players to various environmental challenges that interact with and change the properties of the bubble. The changing states of the bubble make up the core gameplay behaviour, allowing for unique and evolving puzzle mechanics throughout the game.
 
 Narratively, the game will be told using a mixture of environmental storytelling and voice-over. A key character, an initially detached scientist, observes the robot's progress throughout the tests. As the game unfolds, she begins to notice the robot bubble shows signs of being sentient. By the final level she goes against protocol and frees the bubble out into the larger world. The player should feel the subtle bond developing between the bubble and the scientist over the course of the game.
 
-Although I will be helping with general programming throughout the project, my main focus will be as an audio programmer. I want to create a responsive, high-quality sound experience that support's the games tones and mechanics. Using Unreal Engine's MetaSounds, I will implement physics-driven procedural audio that reacts dynamically to the bubble's state, environmental changes and player interactions. I will be working alongside another audio programmer who will be producing music and ambience, which we will collaborate to implement into the game.
+Although I will be helping with general programming throughout the project, my main focus will be as an audio programmer. I want to create a responsive, high-quality sound experience that support's the games tones and mechanics. Using Unreal Engine's MetaSounds, I will implement physics material driven procedural audio that reacts dynamically to the bubble's state, environmental changes and player interactions. I will be working alongside another audio programmer who will be producing music and ambience, which we will collaborate to implement into the game.
 
 #### Initial Goals
-- Designing and implementing sound that reflects the different bubble states
-- Creating environmental audio that supports the atmosphere of each level (windy, hot, cold)
-- Adding sound cues that guide the player during puzzle solving (correct/failed audio cues)
-- Creating a cohesive experience by working closesly with level designers to ensure audio aligns with visuals
-- Implementing voice-over for the scientist character which makes her feel natural and context-aware.
+
+I have a few initial goals for the project with my main focus being on creating a cohesive experience where audio aligns with the visuals, which I can achieve by working closely with level designers. The environmental audio and ambience should support the atmosphere of each of the different levels; summer, spring, autumn and winter. Additionally I want to design and implement sound that reflects the different bubble state to make each mechanic feel more unique. Puzzles should have sound cues which guide the player, letting them know if they are successful or not. To tie the story together I would like to implement voice-over for the scientist character which makes her feel natural and context-aware.
+
 
 #### Anticipated Challenges
-- Ensuring dynamic audio remains responsive across different gameplay scenarios and bubble state changes.
-- Balancing voice-over so it supports the story without becoming repetitive or intrusive.
-- Blending ambience with reactive gameplay audio
-- Working as a team to make sure the audio is cohesive with the gameplay and visuals. This will neeed the level designers to complete their levels in a timely manner.
+
+I think the main challenges for this project will come from working in a big group as most of my projects before have been no more than 8 people on a team. Communication and deadlines will be very key to completing the work. The audio has to be cohesive with the gameplay and visuals which means I have to work with the level designers, to finish in a timely manner. Another challenge will be managing the voice-over, which will have to be balanced with the music, ambience and in game sounds. I am unsure how big the script will be but I want to keep the focus on the game audio so the voice-over does not become repetitive or intrusive.
 
 ## Research (Suggested Word Count 1,100)
 
@@ -45,6 +33,7 @@ Although I will be helping with general programming throughout the project, my m
 #### **Inside**
 
 Inside (2016) is a puzzle-platform game developed and published by Playdead. This was the original inspiration for the game so I thought it would be a good place to start my research. I have actually played the game myself before and really enjoyed the unsettling, minimalist atmosphere. The story is told entirely through the environment and sound design, since there aren't really any cutscenes or narration.
+
 
 Key features and Insights:
 - Environmental Storytelling
@@ -63,6 +52,12 @@ Key features and Insights:
 ### Academic Sources
 - Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
 - Describe how the academic research applies to your project and shapes your design and development decisions.  
+
+As my main focus during this project would be audio programming, I chose a book called Game Audio Mixing by Alex Riviere. This book is an overview of many game audio mixing techniques, processes and workflows. Specifically I looked at sound prioritization, Riviere explains prioritizing is to decide where to place your focus, which sounds are crucial to be heard and which ones can be softened or sacrificed. (Riviere, 2023, p.64). 
+
+For my project I can apply this logic by prioritising sounds that must always be clear to the player such as; bubble impact, environment and puzzle cues.
+
+
 
 ### Documentation Sources
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
@@ -134,6 +129,8 @@ Key features and Insights:
 - Compile a complete list of all sources referenced throughout your project. This may include articles, journals, videos, games, software, documentation, or any other materials.  
 - Ensure all references are formatted according to the university's citation method.  
 - Organise your references in alphabetical order. Alternatively, you may separate them by type (e.g., academic sources, games, videos), but consistency is key.  
+
+- Riviere, A. (2023) *Game Audio Mixing: Insights to Improve Your Mixing Performance*, Oxford, Taylor & Francis Ltd  
 
 ## Declared Assets
 - Provide a detailed list of any third-party assets used in the project.  
