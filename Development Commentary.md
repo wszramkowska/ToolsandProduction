@@ -68,7 +68,7 @@ As my main focus during this project would be audio programming, I chose a book 
 
 For my project I can apply this logic by prioritising sounds that must always be clear to the player such as; bubble impact, environment and puzzle cues. Less important background sounds, such as subtle ambient noise layers or distant environmental effects, could be mixed at lower levels to avoid cluttering the audio.
 
-This research also influenced how I approach the balance between different types of sounds in a scene. For example when adding voice over to the game, I would have to consider when and how her dialogue would cut throught the environment without overpowering important gameplay feedback.  Using Riviere’s prioritisation method helped me plan the audio layers so that critical sounds always remained clear, and the voice-over enhanced the storytelling without becoming distracting. Overall, this academic research provided a strong foundation for managing the complex layering of sound elements in the project.
+This research also influenced how I approach the balance between different types of sounds in a scene. For example when adding voice over to the game, I would have to consider when and how her dialogue would cut throught the environment without overpowering important gameplay feedback.  Using Riviereï¿½s prioritisation method helped me plan the audio layers so that critical sounds always remained clear, and the voice-over enhanced the storytelling without becoming distracting. Overall, this academic research provided a strong foundation for managing the complex layering of sound elements in the project.
 
 
 
@@ -79,9 +79,13 @@ This research also influenced how I approach the balance between different types
 
 [How To Create A Dynamic Footstep System In Unreal Engine (Tutorial)](https://www.youtube.com/watch?v=KUhOUkLCfgc&ab_channel=MattAspland)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KUhOUkLCfgc?si=wvDjg0yK6OtVm-Kh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+One of the first things I wanted to add to the project in terms of audio was dynamic footsteps which would change the sound of the player character's footsteps based on the surface they were walking on. I used this Youtube tutorial, Aspland explained how to use physics materials and animation blueprints to create a dynamic footstep system.
+
+I thought this would be incredibly useful as I could work on it before the designers were finished with their levels because of how flexible this system is. If designers wanted to add a new surface or change one that was already in the game, the only thing they would have to add is a new physics material, and of course the footstep sounds.
 
 
-One of the first things I wanted to add to the project in terms of audio was dynamic footsteps which would change the sound of the player character's footsteps based on the surface they were walking on.
 
 ## Implementation (Suggested Word Count 1,100)
 
