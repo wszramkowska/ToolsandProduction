@@ -76,6 +76,7 @@ This research also influenced how I approach the balance between different types
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 - Explain how this technical knowledge supports your project work and guides your decision-making process. 
 
+#### How To Create A Dynamic Footstep System In Unreal Engine (Tutorial) by Matt Aspland
 
 [How To Create A Dynamic Footstep System In Unreal Engine (Tutorial)](https://www.youtube.com/watch?v=KUhOUkLCfgc&ab_channel=MattAspland)
 
@@ -84,6 +85,28 @@ This research also influenced how I approach the balance between different types
 One of the first things I wanted to add to the project in terms of audio was dynamic footsteps which would change the sound of the player character's footsteps based on the surface they were walking on. I used this Youtube tutorial, Aspland explained how to use physics materials and animation blueprints to create a dynamic footstep system.
 
 I thought this would be incredibly useful as I could work on it before the designers were finished with their levels because of how flexible this system is. If designers wanted to add a new surface or change one that was already in the game, the only thing they would have to add is a new physics material, and of course the footstep sounds.
+
+#### Random audio file playback in MetaSound - Unreal Engine 5 Game Audio by Sound Codex
+
+[Random audio file playback in MetaSound - Unreal Engine 5 Game Audio by Sound Codex](https://www.youtube.com/watch?v=2r81xQLqoBg)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2r81xQLqoBg?si=Tt_v3LPiiRkjeglE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+After creating the dynamic footsteps I realised I would need to randomise audio throughout the project to keep it more realistic and stop the sounds from being repetitive. For example, if each footstep sounded the same, it would throw the player off as that is not how sound works in real life. 
+
+I looked at another youtube tutorial as I personally find videos to be one of the most helpful methods of learning information. This video by Sound Codex looks at audio containers and how to use them to randomise the sound that plays. It is actually very simple, and again it is another flexible system which allows you to add or remove sounds. You can even change how likely certain sounds are to play by changing their weight.
+
+#### Audio in Unreal Engine 5 Documentation
+
+During the project I also referred to Unreal Documentation. Audio in Unreal Engine 5 provides an overview of UE5's audio framework, explaining features such as Sound cues, Metasounds, audio components and attenuation settings which can all be used to create dynamic and immersive audio experiences.  (Audio in Unreal Engine 5 | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.).
+
+This documentation was very useful to help me get an understanding of Metasounds, particularly why I should use this over sound cues. Originally I found sound cues easier to implement, however through my research I discovered Metasounds addresses a lot of the issues that sound cues have, and is generally higher performance.
+
+Additionally, the guide reinforced the importance of attenuation and spatialisation, which would help my sounds feel natural within the 3D space.
+
+Overall the documentation is always a helpful guide to refer to however sound is a sense that cannot always be perfectly explained in writing so I mostly referred to it when having technical problems.
+
+
 
 
 
