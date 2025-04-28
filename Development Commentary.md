@@ -32,36 +32,56 @@ I think the main challenges for this project will come from working in a big gro
 
 #### **Inside**
 
+![Inside (2016)](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304430/31203c10b21261375ba74d5a489f1c7f57d30326/capsule_616x353.jpg?t=1732629579)
+
 Inside (2016) is a puzzle-platform game developed and published by Playdead. This was the original inspiration for the game so I thought it would be a good place to start my research. I have actually played the game myself before and really enjoyed the unsettling, minimalist atmosphere. The story is told entirely through the environment and sound design, since there aren't really any cutscenes or narration.
+A key feature of the game, in terms of sound, is the lack of dialogue, which allows players to interpret the story in whatever way they like. This puts an emphasis on environmental sounds which need to support the story told by the visuals. Since this is a puzzle game sounds are also responsible for giving the player cues when solving puzzles, clicks to signify mechanisms unlocking or beeps to show the player has failed a puzzle. Cues like these are paired with visual cues such as bright red buttons, which stand out against the bleak, grey environment.
+
+When researching Inside, I learned a lot about the importance of matching sounds and visuals to create a cohesive experience for the player. I want to do a similair thing in my project by working closely with the level designers so our work can compliment each other. Instead of trying to make sound a big focus, I want it to be a subtle enhancer for the player's immersion and understanding of the game.
+
+<br>
 
 
-Key features and Insights:
-- Environmental Storytelling
-    - No use of dialogue.
-    - Lighting used to guide player (used against enemies, but also used by enemies).
-    - Allows for players to interpret the story in their own way.
-- Pacing
-    - Gradual introduction of mechanics to allow player to learn.
-    - There aren't really any tutorials which deepends player immersion.
-- Atmosphere
-    - Lighting is harsh, with a lot of spotlights that make the player feel exposed and potentially in danger.
-    - Sound contributes to pacing, tension and emotional tone. A lot of it is very echoey to represent how tiny the player is compared to the building he is in.
-    - The visuals are very bleak and grey. There isn't much colour in the game which supports the dull, dystopian atmosphere. Colour is used selectively, such as highlighting buttons in puzzles by making them glow red.
+#### Portal
+
+![Portal (2007)](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/400/header.jpg?t=1745368554)
+
+Portal (2007) is a puzzle-platform game developed and puiblished by Valve. The primary game mechanic includes portals which are used to complete puzzles within test chambers. Unlike Inside, Portal has an AI character called GLaDOS who provides almost all of the dialogue in the game and acts as a guide for the player. This narrator succeeds at building a personality and narrative, without overwhelming the player and becoming tiresome or annoying. In terms of other audio, each test chamber has some subtle ambience such as mechanical hums and machinery noises. These reinforce the atmosphere of a clinical facility.
+
+I took inspiration from Portal's narrator who is able to enhance the story without distracting from the gameplay. I want to take a similair approach with the Scientist character in our game, her voicelines should assist the player and hint to a bigger world without becoming repetitive or annoying. I will need to build her character gradually because she starts off very cold and calculated, and develops empathy for the experiment subject as the game goes on. Milestones such as completing puzzles can help build this bond between the player character and the Scientist.
+
+
 
     
 ### Academic Sources
 - Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
 - Describe how the academic research applies to your project and shapes your design and development decisions.  
 
-As my main focus during this project would be audio programming, I chose a book called Game Audio Mixing by Alex Riviere. This book is an overview of many game audio mixing techniques, processes and workflows. Specifically I looked at sound prioritization, Riviere explains prioritizing is to decide where to place your focus, which sounds are crucial to be heard and which ones can be softened or sacrificed. (Riviere, 2023, p.64). 
 
-For my project I can apply this logic by prioritising sounds that must always be clear to the player such as; bubble impact, environment and puzzle cues.
+#### Game Audio Mixing: Insights to Improve Your Mixing Performance by Alex Riviere
+
+![](https://m.media-amazon.com/images/I/71SSS1Ej-mL._AC_UF894,1000_QL80_.jpg)
+
+As my main focus during this project would be audio programming, I chose a book called Game Audio Mixing by Alex Riviere as part of my research. This book is an overview of many game audio mixing techniques, processes and workflows. One of the key concepts I focused on was sound prioritization. Riviere explains prioritizing is to decide where to place your focus, which sounds are crucial to be heard and which ones can be softened or sacrificed. (Riviere, 2023, p.64). 
+
+
+
+For my project I can apply this logic by prioritising sounds that must always be clear to the player such as; bubble impact, environment and puzzle cues. Less important background sounds, such as subtle ambient noise layers or distant environmental effects, could be mixed at lower levels to avoid cluttering the audio.
+
+This research also influenced how I approach the balance between different types of sounds in a scene. For example when adding voice over to the game, I would have to consider when and how her dialogue would cut throught the environment without overpowering important gameplay feedback.  Using Riviere’s prioritisation method helped me plan the audio layers so that critical sounds always remained clear, and the voice-over enhanced the storytelling without becoming distracting. Overall, this academic research provided a strong foundation for managing the complex layering of sound elements in the project.
 
 
 
 ### Documentation Sources
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
-- Explain how this technical knowledge supports your project work and guides your decision-making process.  
+- Explain how this technical knowledge supports your project work and guides your decision-making process. 
+
+
+[How To Create A Dynamic Footstep System In Unreal Engine (Tutorial)](https://www.youtube.com/watch?v=KUhOUkLCfgc&ab_channel=MattAspland)
+
+
+
+One of the first things I wanted to add to the project in terms of audio was dynamic footsteps which would change the sound of the player character's footsteps based on the surface they were walking on.
 
 ## Implementation (Suggested Word Count 1,100)
 
