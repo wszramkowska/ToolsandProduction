@@ -230,19 +230,19 @@ One technical difficulty I encountered when implementing my audio is working wit
 ## Outcomes 
 
 ### Source Code/Project Files
-- Provide a link to your complete source code or project files.  
-- Ensure the link is publicly accessible or shared with the appropriate permissions.  
-- Include a brief description of the files provided, highlighting key components or any instructions required to run the project.  
+
+[Project Files](https://ucreative-my.sharepoint.com/:f:/g/personal/2106125_students_ucreative_ac_uk/EoTWmS0PN6NIjyq4cJTgD20Bhf0-lNZKIdYPIK5sbgQPnA?e=V4pX0I)  
 
 ### Build Link
-- Share a link to a playable or executable build of your project.  
-- Ensure the build is accessible across relevant platforms and is publicly accessible.  
-- Include any necessary instructions for running the build, such as system requirements or installation steps.  
+
+
+[Build Link](https://ucreative-my.sharepoint.com/:f:/g/personal/2303759_students_ucreative_ac_uk/Ek9txoh-EL9JnQtqCSUUB3cBo0-nmzBKndsqdi7A8DIk8g?e=Km69AU)
 
 ### Video Demonstration
-- Embed a video or provide a link to a recorded demonstration of your project in action.  
-- The video should showcase key features, functionality, and any unique elements of your project.  
-- Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bg9jvYYqBT8?si=bR6EjRNe67iBvoNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[Summer Level Testing](https://youtu.be/bg9jvYYqBT8?si=kxXVRfs8SX2JM9rQ)
 
 The video plays through the Summer level which was the final and longest level in the game. Due to time constraints the level designers were unable to polish the audio, which throws off the balance of the sounds in the game. The flame throwers specifically were much louder than the other sounds, distracting from some of the gameplay. It also appears some of the wrong sound attenuations were used which caused a persistent oil dropping sound throughout the level which I am unsure if it was intentional. 
 
