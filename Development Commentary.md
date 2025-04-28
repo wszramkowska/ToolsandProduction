@@ -12,14 +12,14 @@ Although I will be helping with general programming throughout the project, my m
 
 #### Initial Goals
 
-I have a few initial goals for the project with my main focus being on creating a cohesive experience where audio aligns with the visuals, which I can achieve by working closely with level designers. The environmental audio and ambience should support the atmosphere of each of the different levels; summer, spring, autumn and winter. Additionally I want to design and implement sound that reflects the different bubble state to make each mechanic feel more unique. Puzzles should have sound cues which guide the player, letting them know if they are successful or not. To tie the story together I would like to implement voice-over for the scientist character which makes her feel natural and context-aware.
+I have a few initial goals for the project with my main focus being on creating a cohesive experience where audio aligns with the visuals, which I can achieve by working closely with level designers. The environmental audio and ambience should support the atmosphere of each of the different levels; summer, spring, autumn and winter. Additionally I want to design and implement sound that reflects the different bubble states to make each mechanic feel more unique. Puzzles should have sound cues which guide the player, letting them know if they are successful or not. To tie the story together I would like to implement voice-over for the scientist character which makes her feel natural and context-aware.
 
 
 #### Anticipated Challenges
 
 I think the main challenges for this project will come from working in a big group as most of my projects before have been no more than 8 people on a team. Communication and deadlines will be very key to completing the work. The audio has to be cohesive with the gameplay and visuals which means I have to work with the level designers, to finish in a timely manner. Another challenge will be managing the voice-over, which will have to be balanced with the music, ambience and in game sounds. I am unsure how big the script will be but I want to keep the focus on the game audio so the voice-over does not become repetitive or intrusive.
 
-## Research (Suggested Word Count 1,100)
+## Research
 
 ### Methodology
 
@@ -49,9 +49,9 @@ When researching Inside, I learned a lot about the importance of matching sounds
 
 *Figure 2*
 
-Portal (2007) is a puzzle-platform game developed and puiblished by Valve. The primary game mechanic includes portals which are used to complete puzzles within test chambers. Unlike Inside, Portal has an AI character called GLaDOS who provides almost all of the dialogue in the game and acts as a guide for the player. This narrator succeeds at building a personality and narrative, without overwhelming the player and becoming tiresome or annoying. In terms of other audio, each test chamber has some subtle ambience such as mechanical hums and machinery noises. These reinforce the atmosphere of a clinical facility.
+Portal (2007) is a puzzle-platform game developed and published by Valve. The primary game mechanic includes portals which are used to complete puzzles within test chambers. Unlike Inside, Portal has an AI character called GLaDOS who provides almost all of the dialogue in the game and acts as a guide for the player. This narrator succeeds at building a personality and narrative, without overwhelming the player and becoming tiresome or annoying. In terms of other audio, each test chamber has some subtle ambience such as mechanical hums and machinery noises. These reinforce the atmosphere of a clinical facility.
 
-I took inspiration from Portal's narrator who is able to enhance the story without distracting from the gameplay. I want to take a similair approach with the Scientist character in our game, her voicelines should assist the player and hint to a bigger world without becoming repetitive or annoying. I will need to build her character gradually because she starts off very cold and calculated, and develops empathy for the experiment subject as the game goes on. Milestones such as completing puzzles can help build this bond between the player character and the Scientist.
+I took inspiration from Portal's narrator who is able to enhance the story without distracting from the gameplay. I want to take a similar approach with the Scientist character in our game, her voicelines should assist the player and hint to a bigger world without becoming repetitive or annoying. I will need to build her character gradually because she starts off very cold and calculated, and develops empathy for the experiment subject as the game goes on. Milestones such as completing puzzles can help build this bond between the player character and the Scientist.
 
 
 
@@ -66,13 +66,13 @@ I took inspiration from Portal's narrator who is able to enhance the story witho
 
 *Figure 3*
 
-As my main focus during this project would be audio programming, I chose a book called Game Audio Mixing by Alex Riviere as part of my research. This book is an overview of many game audio mixing techniques, processes and workflows. One of the key concepts I focused on was sound prioritization. Riviere explains prioritizing is to decide where to place your focus, which sounds are crucial to be heard and which ones can be softened or sacrificed. (Riviere, 2023, p.64). 
+As my main focus during this project would be audio programming, I chose a book called Game Audio Mixing by Alex Riviere as part of my research. This book is an overview of many game audio mixing techniques, processes and workflows. One of the key concepts I focused on was sound prioritisation. Riviere explains prioritising is to decide where to place your focus, which sounds are crucial to be heard and which ones can be softened or sacrificed. (Riviere, 2023, p.64). 
 
 
 
 For my project I can apply this logic by prioritising sounds that must always be clear to the player such as; bubble impact, environment and puzzle cues. Less important background sounds, such as subtle ambient noise layers or distant environmental effects, could be mixed at lower levels to avoid cluttering the audio.
 
-This research also influenced how I approach the balance between different types of sounds in a scene. For example when adding voice over to the game, I would have to consider when and how her dialogue would cut throught the environment without overpowering important gameplay feedback.  Using Riviere�s prioritisation method helped me plan the audio layers so that critical sounds always remained clear, and the voice-over enhanced the storytelling without becoming distracting. Overall, this academic research provided a strong foundation for managing the complex layering of sound elements in the project.
+This research also influenced how I approach the balance between different types of sounds in a scene. For example when adding voice over to the game, I would have to consider when and how her dialogue would cut throught the environment without overpowering important gameplay feedback.  Using Riviere's prioritisation method helped me plan the audio layers so that critical sounds always remained clear, and the voice-over enhanced the storytelling without becoming distracting. Overall, this academic research provided a strong foundation for managing the complex layering of sound elements in the project.
 
 
 
@@ -117,12 +117,10 @@ Overall the documentation is always a helpful guide to refer to however sound is
 
 
 
-## Implementation (Suggested Word Count 1,100)
+## Implementation
 
 ### Process
-- Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
-- Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
-- Include screenshots, diagrams, or code snippets where relevant to showcase your progress.  
+
 
 #### Optimisation
 
@@ -156,6 +154,12 @@ Unfortunately due to time constraints the voice lines were not edited in time an
 
 #### Dynamic Footstep System
 
+[Dynamic Footstep System](https://www.youtube.com/watch?v=1rQMphgCKdg)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1rQMphgCKdg?si=v0NtLbXfmyaEi-qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Figure 7*
+
 One of the first major components I implemented was a dynamic footstep system which changed the sound of the player character's footsteps depending on the surface they were walking on. 
 
 I did this by creating an AnimNotify event, matching the notify in the animation sequence to play when the foot hits the ground. In the animation blueprint, different sounds play depending on what physical material the character is stepping on. To achieve this, the floor surface must use a material which has a physics material assigned to it. 
@@ -184,22 +188,29 @@ I then edited these sounds in Adobe Audition, mostly cutting the audio to the sp
 
 #### Audio Implementation
 
+[Steam Hiss Testing](https://www.youtube.com/watch?v=8BQbCA1z81w)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8BQbCA1z81w?si=N71P1qssV8laCUvu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Figure 8*
+
 I assisted the designers in implementing some of the more complex audio. For example, in the winter level there are particle systems that blow cold air. The designer was finding it difficult to add the audio into the Niagara particle effect, so I worked around it and timed the audio to match the particle. This allowed me to play it at spawn which matched the audio to the visuals.
 
 #### Intro Video Audio
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sFZQOJdEII0?si=1E7bV0fujkMhA7tQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### New Approaches
-- Detail any innovative or new approaches you explored during the project.  
-- Explain why these approaches were chosen and how they differ from standard practices.  
-- Evaluate the success of these approaches, including any challenges faced and lessons learned.  
+[Intro Video](https://www.youtube.com/watch?v=sFZQOJdEII0)
+
+
+One of my team members created an intro video which would play before the start of the level. Me and the other audio programmer created the audio for this video. We were given a pc bootup sequence as inspiration for the soundwork. We added some responsive sound such as typing, and pass and fail sound cues.
+
+
 
 ### Testing
-- Document the user testing conducted, specifying the type of tests used (e.g., automated testing, guided user testing, blind testing).  
-- Present feedback or issues identified during testing, using graphs, tables, or visual aids to summarise results.  
-- Describe how these issues were addressed. If any issues were not resolved, provide a clear justification for leaving them unaddressed.  
 
-Inititally before the sounds were implemented, I playtested the levels made by our designers. This not only provided feeback for their puzzles and game mechanics, but also allowed me to get a good grasp of each level and the kind of atmosphere I would need to create with audio. I also took note of any assets in teh level which would require sound such as oil dripping, swinging axes and big fans.
+
+Inititally before the sounds were implemented, I playtested the levels made by our designers. This not only provided feedback for their puzzles and game mechanics, but also allowed me to get a good grasp of each level and the kind of atmosphere I would need to create with audio. I also took note of any assets in teh level which would require sound such as oil dripping, swinging axes and big fans.
 
 I collaborated with other members of my team, specifically the level designers, to conduct playtesting sessions. These sessions involved team members playing through the level as I observed and collected feedback regarding the audio experience.
 
@@ -208,10 +219,7 @@ I received feedback about footstep audio transition between surfaces, sometimes 
 
 
 ### Technical Difficulties
-- Identify any technical difficulties encountered during the implementation phase.  
-- Provide details on how these issues were diagnosed and resolved.  
-- If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
-- Reflect on what you would do differently in future projects to avoid similar issues.  
+
 
 One technical difficulty I encountered when implementing my audio is working with the Niagara Particle System. The winter level of the game had tunnels which blasted cold air, the visuals for this were done using Niagara. When trying to add the sound for this, I attemoted to make an event in the emitter, which I could then call from the tunnel blueprints. However I could not get the events to actually show up and instead I cut the audio perfectly and timed it to the wind blast, then played it when the particle effects were spawned. In the end I was happy with the timing of the audio matching the effects, however I would like to do further research in the future into the Niagara Systems and specifically how to implement audio within them.
 
@@ -233,9 +241,13 @@ One technical difficulty I encountered when implementing my audio is working wit
 ### Video Demonstration
 - Embed a video or provide a link to a recorded demonstration of your project in action.  
 - The video should showcase key features, functionality, and any unique elements of your project.  
-- Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.  
+- Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
 
-## Reflection (Suggested Word Count 500)
+The video plays through the Summer level which was the final and longest level in the game. Due to time constraints the level designers were unable to polish the audio, which throws off the balance of the sounds in the game. The flame throwers specifically were much louder than the other sounds, distracting from some of the gameplay. It also appears some of the wrong sound attenuations were used which caused a persistent oil dropping sound throughout the level which I am unsure if it was intentional. 
+
+However I did my best to provide audio for each level in the time that I was given. Although the sound balance is off, I think with a bit of polish the atmosphere of the level would greatly improve. 
+
+## Reflection
 
 ### Research Effectiveness
  
@@ -250,13 +262,15 @@ The Metasound sources which randomised audio was also made to assist designers, 
 
 Throughout the project I kept good communication with the team and offered my help with technical problems such as github, or building the project.
 
-Overall I think my role in supporting the designers for this project helped in some parts to streamline the production of the game and reduce technical difficulties where possible. 
+Overall I think my role in supporting the designers for this project helped in some parts to streamline the production of the game and reduce technical difficulties where possible. This project also helped me become more flexible when technical solutions didn't work as expected, as well as improving my skills in Unreal Engine's Metasounds.
 
 ### Negative Analysis
 
 As it was our first big team project, there was a steep learning curve in efficiency and communication. Whilst some members were consistently communicative, others were less responsive, which occasionally caused an imbalance and made it difficult to coordinate tasks effectively. This led to delays and additional pressure during the final stages of the project.
 
 Another significant challenge was the timing of audio integration. Since audio typically comes at the end of the production pipeline, I was unable to access finished levels until quite late in the project timeline. This limited the amount of time available for implementing, testing, and adjusting the audio to fit the final environments. In some cases, I also had to quickly source or create new sounds to match unexpected design changes, which affected the overall polish of the final product.
+
+These issues also led to the voice over being cut from the game which meant the environment was now responsible for telling the whole story.
 
 Despite these challenges, the experience taught me the importance of early communication and flexible workflows when working on audio in a collaborative project.
 
@@ -269,14 +283,34 @@ Another thing I would do is spend more time learning audio editing software such
 
 
 ## Bibliography
-- Compile a complete list of all sources referenced throughout your project. This may include articles, journals, videos, games, software, documentation, or any other materials.  
-- Ensure all references are formatted according to the university's citation method.  
-- Organise your references in alphabetical order. Alternatively, you may separate them by type (e.g., academic sources, games, videos), but consistency is key.  
 
 - Riviere, A. (2023) *Game Audio Mixing: Insights to Improve Your Mixing Performance*, Oxford, Taylor & Francis Ltd  
 
 ## Declared Assets
-- Provide a detailed list of any third-party assets used in the project.  
-- This includes asset packs, music, sound effects, 3D models, textures, scripts, or code from external sources.  
-- Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
-- Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.  
+
+- Used to assist in finding and summarising research material: Chat GPT
+
+#### Sounds
+- Rolling ice ball: https://freesound.org/people/SquirmTheVerm/sounds/260778/
+- Steam: https://pixabay.com/sound-effects/steam-sfx-26907/
+
+- Oil drop: https://freesound.org/people/ahill86/sounds/207142/
+- Steam hiss: https://freesound.org/people/elonen/sounds/21065/
+- Lighting fire: https://freesound.org/people/plasterbrain/sounds/534702/
+- Large fan hum: https://freesound.org/people/Nox_Sound/sounds/465614/
+- Factory Ambience: https://freesound.org/people/szegvari/sounds/577079/
+- Fire whoosh: https://freesound.org/people/kingsrow/sounds/181577/
+- Water footsteps: https://freesound.org/people/wwstudioswastaken/sounds/624167/
+- Conveyor Belt: https://freesound.org/people/Kinoton/sounds/519027/
+- Cable Snap: https://freesound.org/people/Jarebear1223/sounds/618530/
+- Oil Flowing: https://freesound.org/people/julianmateo_/sounds/637004/
+- Ice Smashing: https://freesound.org/people/cognito%20perceptu/sounds/267573/
+- Rolling Ball: https://freesound.org/people/SquirmTheVerm/sounds/260778/
+- Metal Crusher: https://freesound.org/people/AudioPapkin/sounds/510082/
+- Cardboard Box Fall: https://freesound.org/people/ccovi/sounds/720700/
+- Electric Sparks: https://freesound.org/people/kev_durr/sounds/396470/
+- Strong Wind: https://freesound.org/people/Autistic%20Lucario/sounds/195340/
+- Sap Drops: https://freesound.org/people/kvgarlic/sounds/505409/
+- Bubbling: https://freesound.org/people/cognito%20perceptu/sounds/139767/
+- Big fan: https://freesound.org/people/lgnzimmsound/sounds/774235/
+- Axe Hit: https://freesound.org/people/deleted_user_3656686/sounds/215160/ 
