@@ -33,6 +33,8 @@ To inform my practical work, I began by identifying key sources that were direct
 
 ![Inside (2016)](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304430/31203c10b21261375ba74d5a489f1c7f57d30326/capsule_616x353.jpg?t=1732629579)
 
+*Figure 1*
+
 Inside (2016) is a puzzle-platform game developed and published by Playdead. This was the original inspiration for the game so I thought it would be a good place to start my research. I have actually played the game myself before and really enjoyed the unsettling, minimalist atmosphere. The story is told entirely through the environment and sound design, since there aren't really any cutscenes or narration.
 A key feature of the game, in terms of sound, is the lack of dialogue, which allows players to interpret the story in whatever way they like. This puts an emphasis on environmental sounds which need to support the story told by the visuals. Since this is a puzzle game sounds are also responsible for giving the player cues when solving puzzles, clicks to signify mechanisms unlocking or beeps to show the player has failed a puzzle. Cues like these are paired with visual cues such as bright red buttons, which stand out against the bleak, grey environment.
 
@@ -44,6 +46,8 @@ When researching Inside, I learned a lot about the importance of matching sounds
 #### Portal
 
 ![Portal (2007)](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/400/header.jpg?t=1745368554)
+
+*Figure 2*
 
 Portal (2007) is a puzzle-platform game developed and puiblished by Valve. The primary game mechanic includes portals which are used to complete puzzles within test chambers. Unlike Inside, Portal has an AI character called GLaDOS who provides almost all of the dialogue in the game and acts as a guide for the player. This narrator succeeds at building a personality and narrative, without overwhelming the player and becoming tiresome or annoying. In terms of other audio, each test chamber has some subtle ambience such as mechanical hums and machinery noises. These reinforce the atmosphere of a clinical facility.
 
@@ -59,6 +63,8 @@ I took inspiration from Portal's narrator who is able to enhance the story witho
 #### Game Audio Mixing: Insights to Improve Your Mixing Performance by Alex Riviere
 
 ![](https://m.media-amazon.com/images/I/71SSS1Ej-mL._AC_UF894,1000_QL80_.jpg)
+
+*Figure 3*
 
 As my main focus during this project would be audio programming, I chose a book called Game Audio Mixing by Alex Riviere as part of my research. This book is an overview of many game audio mixing techniques, processes and workflows. One of the key concepts I focused on was sound prioritization. Riviere explains prioritizing is to decide where to place your focus, which sounds are crucial to be heard and which ones can be softened or sacrificed. (Riviere, 2023, p.64). 
 
@@ -79,6 +85,8 @@ This research also influenced how I approach the balance between different types
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KUhOUkLCfgc?si=wvDjg0yK6OtVm-Kh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+*Figure 4*
+
 One of the first things I wanted to add to the project in terms of audio was dynamic footsteps which would change the sound of the player character's footsteps based on the surface they were walking on. I used this Youtube tutorial, Aspland explained how to use physics materials and animation blueprints to create a dynamic footstep system.
 
 I thought this would be incredibly useful as I could work on it before the designers were finished with their levels because of how flexible this system is. If designers wanted to add a new surface or change one that was already in the game, the only thing they would have to add is a new physics material, and of course the footstep sounds.
@@ -88,6 +96,8 @@ I thought this would be incredibly useful as I could work on it before the desig
 [Random audio file playback in MetaSound - Unreal Engine 5 Game Audio by Sound Codex](https://www.youtube.com/watch?v=2r81xQLqoBg)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2r81xQLqoBg?si=Tt_v3LPiiRkjeglE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Figure 5*
 
 After creating the dynamic footsteps I realised I would need to randomise audio throughout the project to keep it more realistic and stop the sounds from being repetitive. For example, if each footstep sounded the same, it would throw the player off as that is not how sound works in real life. 
 
@@ -114,16 +124,60 @@ Overall the documentation is always a helpful guide to refer to however sound is
 - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
 - Include screenshots, diagrams, or code snippets where relevant to showcase your progress.  
 
+#### Optimisation
+
+At the beginning of the project I helped with optimisation by changing blueprints into actor components so they could be reused for future mechanics. I worked on BP_BodyChar which was the body of the player character. I put the SpawnBubble() and PopReset() functions into the Actor Component AC_BubbleController.
+
+<iframe src="https://blueprintue.com/render/l09p1tl8/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 6. Blueprints for Bubble Spawn*
+
+
 #### Technical Support
 
 To make my audio cohesive with level visuals, I had to work closesly with level designers. Since I was already frequently communicating with them, I also took on a technical support role where I would help designers who were having issues.
 
 Most of this was helping with resolving merge conflicts when pushing in Github. Some conflicts were more difficult to solve than others, but overall I ensured the main branch remained stable and commits would not overwrite any important blueprints. 
 
+#### Voice-Over
+
 I also attended the voice-over recording sessions to provide opinions from the perspective of an audio programmer. Voice-over for the beginning of a level should explain that test chamber, and would therefore be a bit longer. However voice-over for things such as player death should be shorter and have various versions, this is because the player would hear these voice lines more frequently and so they may become repetitive much sooner.
+
+Here is a link to the final voice line recordings and script:
 
 [Final Voice Lines](https://drive.google.com/drive/folders/1uUn62mpLoAL6-yhYoxVH4wV81M607tN_?usp=sharing)
 
+Unfortunately due to time constraints the voice lines were not edited in time and therefore I was unable to implement them into the game. I tested the raw voice lines for player death and created a MetaSound Source which played a random voice line when the player died. I was unhappy with how the voice sounded within the game and chose to cut voice-over and instead focus on ambience and environmental sounds.
+
+#### Dynamic Footstep System
+
+One of the first major components I implemented was a dynamic footstep system which changed the sound of the player character's footsteps depending on the surface they were walking on. 
+
+I did this by creating an AnimNotify event, matching the notify in the animation sequence to play when the foot hits the ground. In the animation blueprint, different sounds play depending on what physical material the character is stepping on. To achieve this, the floor surface must use a material which has a physics material assigned to it. 
+
+This allowed the system to adapt to new surfaces seamlessly, even before the level designs were finalized. If designers wanted to add or modify surfaces in the game, the only requirements were the addition of a new physics material and appropriate footstep sounds, making the system flexible and adaptable.
+
+<iframe src="https://blueprintue.com/render/6sokr1zb/" scrolling="no" allowfullscreen></iframe>
+
+*Figure 7. Blueprints for Dynamic Footstep System*
+
+#### Randomised Audio Playback
+
+Another key feature I implemented was the randomization of sound effects. While creating dynamic footsteps, I realized that repetition could break immersion. To address this, I used Unreal’s MetaSounds system to randomize footstep sounds. By organizing audio clips into containers, I ensured that each footstep sounded unique, mimicking the random nature of real-world sounds. This helped prevent the game from sounding monotonous, and keeping the sound design realistic.
+
+I used this for various sounds through the project such as the dripping of oil and sap, which also play random sounds from a set selection each time they drip, and also for ice breaking.
+
+Creating these Metasound Sources gave the level designers an easy way to add audio that feels more natural, whilst also having access to the original, individual sounds where needed.
+
+#### Audio Research and Editing
+
+Originally me and the other audio developer wanted to make our own sounds for the game however we did not have full levels until quite late and were left with not enough time to accomplish that.
+
+Instead I chose to find audio online and try my best to edit it and match it to our game so everything still sounds coherent. I found most of the sounds on [Freesound](https://freesound.org/), ensuring all of the copyright licenses were Creative Commons and usable for our game. This limited the sounds I could choose and meant I was not always able to find a good match.
+
+I then edited these sounds in Adobe Audition, mostly cutting the audio to the specific parts I needed. I then added all of these into the Unreal Project, creating an organised folder system so designers could find them easily.
+
+#### Intro Video Audio
 
 
 ### New Approaches
@@ -136,11 +190,24 @@ I also attended the voice-over recording sessions to provide opinions from the p
 - Present feedback or issues identified during testing, using graphs, tables, or visual aids to summarise results.  
 - Describe how these issues were addressed. If any issues were not resolved, provide a clear justification for leaving them unaddressed.  
 
+Inititally before the sounds were implemented, I playtested the levels made by our designers. This not only provided feeback for their puzzles and game mechanics, but also allowed me to get a good grasp of each level and the kind of atmosphere I would need to create with audio. I also took note of any assets in teh level which would require sound such as oil dripping, swinging axes and big fans.
+
+I collaborated with other members of my team, specifically the level designers, to conduct playtesting sessions. These sessions involved team members playing through the level as I observed and collected feedback regarding the audio experience.
+
+I received feedback about footstep audio transition between surfaces, sometimes when the player moved from one surface to another the footsteps could sound awkward or out of place. I had a lot of difficulty trying to fix this because the footsteps were free sounds and I didn't have enough technical knowledge in audio editing to create a smoother blend. Given more time I could learn Adobe Audition in more detail and try to edit the sounds more so they would match and transition more easily.
+
+
+
 ### Technical Difficulties
 - Identify any technical difficulties encountered during the implementation phase.  
 - Provide details on how these issues were diagnosed and resolved.  
 - If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
 - Reflect on what you would do differently in future projects to avoid similar issues.  
+
+One technical difficulty I encountered when implementing my audio is working with the Niagara Particle System. The winter level of the game had tunnels which blasted cold air, the visuals for this were done using Niagara. When trying to add the sound for this, I attemoted to make an event in the emitter, which I could then call from the tunnel blueprints. However I could not get the events to actually show up and instead I cut the audio perfectly and timed it to the wind blast, then played it when the particle effects were spawned. In the end I was happy with the timing of the audio matching the effects, however I would like to do further research in the future into the Niagara Systems and specifically how to implement audio within them.
+
+
+
 
 ## Outcomes (Suggested Word Count 300)
 
