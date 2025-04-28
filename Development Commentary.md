@@ -22,13 +22,12 @@ I think the main challenges for this project will come from working in a big gro
 ## Research (Suggested Word Count 1,100)
 
 ### Methodology
-- Identify relevant sources for the project, including articles, documentation, talks, and games.  
-- Detail how these sources have informed your practical work and influenced your approach.  
+
+
+To inform my practical work, I began by identifying key sources that were directly relevant to the game and audio systems I wanted to create. I selected a mixture of games, academic writing, official documentation, and video tutorials, focusing on both creative and technical aspects.
 
 ### Game Sources
-- Conduct research on games that are relevant to your project. Provide a brief description of each game and the insights it offers.  
-- Analyse the game's approach, cross-referencing it with other sources such as articles or talks to support your analysis.  
-- Explain how these insights apply to your project and influence your decision-making process.  
+
 
 #### **Inside**
 
@@ -54,9 +53,8 @@ I took inspiration from Portal's narrator who is able to enhance the story witho
 
     
 ### Academic Sources
-- Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
-- Describe how the academic research applies to your project and shapes your design and development decisions.  
 
+<br>
 
 #### Game Audio Mixing: Insights to Improve Your Mixing Performance by Alex Riviere
 
@@ -73,8 +71,7 @@ This research also influenced how I approach the balance between different types
 
 
 ### Documentation Sources
-- Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
-- Explain how this technical knowledge supports your project work and guides your decision-making process. 
+
 
 #### How To Create A Dynamic Footstep System In Unreal Engine (Tutorial) by Matt Aspland
 
@@ -116,6 +113,18 @@ Overall the documentation is always a helpful guide to refer to however sound is
 - Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
 - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
 - Include screenshots, diagrams, or code snippets where relevant to showcase your progress.  
+
+#### Technical Support
+
+To make my audio cohesive with level visuals, I had to work closesly with level designers. Since I was already frequently communicating with them, I also took on a technical support role where I would help designers who were having issues.
+
+Most of this was helping with resolving merge conflicts when pushing in Github. Some conflicts were more difficult to solve than others, but overall I ensured the main branch remained stable and commits would not overwrite any important blueprints. 
+
+I also attended the voice-over recording sessions to provide opinions from the perspective of an audio programmer. Voice-over for the beginning of a level should explain that test chamber, and would therefore be a bit longer. However voice-over for things such as player death should be shorter and have various versions, this is because the player would hear these voice lines more frequently and so they may become repetitive much sooner.
+
+[Final Voice Lines](https://drive.google.com/drive/folders/1uUn62mpLoAL6-yhYoxVH4wV81M607tN_?usp=sharing)
+
+
 
 ### New Approaches
 - Detail any innovative or new approaches you explored during the project.  
