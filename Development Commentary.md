@@ -137,7 +137,12 @@ At the beginning of the project I helped with optimisation by changing blueprint
 
 To make my audio cohesive with level visuals, I had to work closesly with level designers. Since I was already frequently communicating with them, I also took on a technical support role where I would help designers who were having issues.
 
-Most of this was helping with resolving merge conflicts when pushing in Github. Some conflicts were more difficult to solve than others, but overall I ensured the main branch remained stable and commits would not overwrite any important blueprints. 
+Most of this was helping with resolving merge conflicts when pushing in Github. Some conflicts were more difficult to solve than others, but overall I ensured the main branch remained stable and commits would not overwrite any important blueprints.
+
+I also offered help to those who had problems opening the project at home, and created a markdown document of step by step instructions that could help solve their issue.
+
+Here is a link to the tutorial I made to hopefully help build the project successfully at home:
+[Unreal For Windows 10](https://github.com/wszramkowska/MyUCA-Notes/blob/main/Unreal%20Windows%2010.md)
 
 #### Voice-Over
 
@@ -176,6 +181,10 @@ Originally me and the other audio developer wanted to make our own sounds for th
 Instead I chose to find audio online and try my best to edit it and match it to our game so everything still sounds coherent. I found most of the sounds on [Freesound](https://freesound.org/), ensuring all of the copyright licenses were Creative Commons and usable for our game. This limited the sounds I could choose and meant I was not always able to find a good match.
 
 I then edited these sounds in Adobe Audition, mostly cutting the audio to the specific parts I needed. I then added all of these into the Unreal Project, creating an organised folder system so designers could find them easily.
+
+#### Audio Implementation
+
+I assisted the designers in implementing some of the more complex audio. For example, in the winter level there are particle systems that blow cold air. The designer was finding it difficult to add the audio into the Niagara particle effect, so I worked around it and timed the audio to match the particle. This allowed me to play it at spawn which matched the audio to the visuals.
 
 #### Intro Video Audio
 
@@ -233,10 +242,20 @@ One technical difficulty I encountered when implementing my audio is working wit
 - Highlight which sources (games, academic, documentation) had the most significant impact on your work and explain why.  
 - Identify any research gaps or areas where additional information could have improved your project outcomes.  
 
+Overall the research I did throughout the project was highly beneficial, specifically the documentation and youtube tutorials I referred to throughout the project. These provided technical guidance, enabling me to design and implement the audio systems effectively. However, there are areas where additional research could have enhanced the project, particularly in interactive sound design and the deeper integration of narrative through audio. While these gaps did not significantly hinder the project, addressing them in future work could further elevate the audio experience and player engagement.
+
 ### Positive Analysis
 - Reflect on the successful aspects of the project.  
 - Highlight specific elements that worked well, such as technical solutions, creative decisions, or user feedback.  
 - Provide evidence to support your analysis, such as test results, screenshots, or user comments.  
+
+I think a successful part of the project was creating systems that designers could easily use in their levels. The dynamic footstep system only required a physics material and some sounds to use which made the work of level designers much easier. 
+
+The Metasound sources which randomised audio was also made to assist designers, they wouldn't have to program anything to randomise sounds and could instead use these Metasounds, popping them wherever they needed in their level, or adding them into their blueprints.
+
+Throughout the project I kept good communication with the team and offered my help with technical problems such as github, or building the project.
+
+Overall I think my role in supporting the designers for this project helped in some parts to streamline the production of the game and reduce technical difficulties where possible. 
 
 ### Negative Analysis
 - Identify the areas of the project that did not go as planned or could have been improved.  
