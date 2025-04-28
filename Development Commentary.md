@@ -1,5 +1,5 @@
 # Tools and Production
-# Development Commentary Template
+# Development Commentary
 
 ## Project Outline 
 
@@ -8,7 +8,7 @@ This project is a physics-based puzzle game in which players control a robot sui
 
 Narratively, the game will be told using a mixture of environmental storytelling and voice-over. A key character, an initially detached scientist, observes the robot's progress throughout the tests. As the game unfolds, she begins to notice the robot bubble shows signs of being sentient. By the final level she goes against protocol and frees the bubble out into the larger world. The player should feel the subtle bond developing between the bubble and the scientist over the course of the game.
 
-Although I will be helping with general programming throughout the project, my main focus will be as an audio programmer. I want to create a responsive, high-quality sound experience that support's the games tones and mechanics. Using Unreal Engine's MetaSounds, I will implement physics material driven procedural audio that reacts dynamically to the bubble's state, environmental changes and player interactions. I will be working alongside another audio programmer who will be producing music and ambience, which we will collaborate to implement into the game.
+Although I will be helping with general programming throughout the project, my main focus will be as an audio programmer. I want to create a responsive, high-quality sound experience that supports the games tones and mechanics. Using Unreal Engine's MetaSounds, I will implement physics material driven procedural audio that reacts dynamically to the bubble's state, environmental changes and player interactions. I will be working alongside another audio programmer who will be producing music and ambience, which we will collaborate to implement into the game.
 
 #### Initial Goals
 
@@ -38,7 +38,7 @@ To inform my practical work, I began by identifying key sources that were direct
 Inside (2016) is a puzzle-platform game developed and published by Playdead. This was the original inspiration for the game so I thought it would be a good place to start my research. I have actually played the game myself before and really enjoyed the unsettling, minimalist atmosphere. The story is told entirely through the environment and sound design, since there aren't really any cutscenes or narration.
 A key feature of the game, in terms of sound, is the lack of dialogue, which allows players to interpret the story in whatever way they like. This puts an emphasis on environmental sounds which need to support the story told by the visuals. Since this is a puzzle game sounds are also responsible for giving the player cues when solving puzzles, clicks to signify mechanisms unlocking or beeps to show the player has failed a puzzle. Cues like these are paired with visual cues such as bright red buttons, which stand out against the bleak, grey environment.
 
-When researching Inside, I learned a lot about the importance of matching sounds and visuals to create a cohesive experience for the player. I want to do a similair thing in my project by working closely with the level designers so our work can compliment each other. Instead of trying to make sound a big focus, I want it to be a subtle enhancer for the player's immersion and understanding of the game.
+When researching Inside, I learned a lot about the importance of matching sounds and visuals to create a cohesive experience for the player. I want to do a similar thing in my project by working closely with the level designers so our work can complement each other. Instead of trying to make sound a big focus, I want it to be a subtle enhancer for the player's immersion and understanding of the game.
 
 <br>
 
@@ -72,7 +72,7 @@ As my main focus during this project would be audio programming, I chose a book 
 
 For my project I can apply this logic by prioritising sounds that must always be clear to the player such as; bubble impact, environment and puzzle cues. Less important background sounds, such as subtle ambient noise layers or distant environmental effects, could be mixed at lower levels to avoid cluttering the audio.
 
-This research also influenced how I approach the balance between different types of sounds in a scene. For example when adding voice over to the game, I would have to consider when and how her dialogue would cut throught the environment without overpowering important gameplay feedback.  Using Riviere's prioritisation method helped me plan the audio layers so that critical sounds always remained clear, and the voice-over enhanced the storytelling without becoming distracting. Overall, this academic research provided a strong foundation for managing the complex layering of sound elements in the project.
+This research also influenced how I approach the balance between different types of sounds in a scene. For example when adding voice over to the game, I would have to consider when and how her dialogue would cut through the environment without overpowering important gameplay feedback.  Using Riviere's prioritisation method helped me plan the audio layers so that critical sounds always remained clear, and the voice-over enhanced the storytelling without becoming distracting. Overall, this academic research provided a strong foundation for managing the complex layering of sound elements in the project.
 
 
 
@@ -87,7 +87,7 @@ This research also influenced how I approach the balance between different types
 
 *Figure 4*
 
-One of the first things I wanted to add to the project in terms of audio was dynamic footsteps which would change the sound of the player character's footsteps based on the surface they were walking on. I used this Youtube tutorial, Aspland explained how to use physics materials and animation blueprints to create a dynamic footstep system.
+One of the first things I wanted to add to the project, in terms of audio, were dynamic footsteps which would change the sound of the player character's footsteps based on the surface they were walking on. I used this Youtube tutorial, in which Aspland explains how to use physics materials and animation blueprints to create a dynamic footstep system.
 
 I thought this would be incredibly useful as I could work on it before the designers were finished with their levels because of how flexible this system is. If designers wanted to add a new surface or change one that was already in the game, the only thing they would have to add is a new physics material, and of course the footstep sounds.
 
@@ -210,7 +210,7 @@ One of my team members created an intro video which would play before the start 
 ### Testing
 
 
-Inititally before the sounds were implemented, I playtested the levels made by our designers. This not only provided feedback for their puzzles and game mechanics, but also allowed me to get a good grasp of each level and the kind of atmosphere I would need to create with audio. I also took note of any assets in teh level which would require sound such as oil dripping, swinging axes and big fans.
+Initially before the sounds were implemented, I playtested the levels made by our designers. This not only provided feedback for their puzzles and game mechanics, but also allowed me to get a good grasp of each level and the kind of atmosphere I would need to create with audio. I also took note of any assets in the level which would require sound such as oil dripping, swinging axes and big fans.
 
 I collaborated with other members of my team, specifically the level designers, to conduct playtesting sessions. These sessions involved team members playing through the level as I observed and collected feedback regarding the audio experience.
 
@@ -221,12 +221,13 @@ I received feedback about footstep audio transition between surfaces, sometimes 
 ### Technical Difficulties
 
 
-One technical difficulty I encountered when implementing my audio is working with the Niagara Particle System. The winter level of the game had tunnels which blasted cold air, the visuals for this were done using Niagara. When trying to add the sound for this, I attemoted to make an event in the emitter, which I could then call from the tunnel blueprints. However I could not get the events to actually show up and instead I cut the audio perfectly and timed it to the wind blast, then played it when the particle effects were spawned. In the end I was happy with the timing of the audio matching the effects, however I would like to do further research in the future into the Niagara Systems and specifically how to implement audio within them.
+One technical difficulty I encountered when implementing my audio is working with the Niagara Particle System. The winter level of the game had tunnels which blasted cold air, the visuals for this were done using Niagara. When trying to add the sound for this, I attempted to make an event in the emitter, which I could then call from the tunnel blueprints. However I could not get the events to actually show up and instead I cut the audio perfectly and timed it to the wind blast, then played it when the particle effects were spawned. In the end I was happy with the timing of the audio matching the effects, however I would like to do further research in the future into the Niagara Systems and specifically how to implement audio within them.
 
 
 
 
-## Outcomes (Suggested Word Count 300)
+
+## Outcomes 
 
 ### Source Code/Project Files
 - Provide a link to your complete source code or project files.  
@@ -285,6 +286,17 @@ Another thing I would do is spend more time learning audio editing software such
 ## Bibliography
 
 - Riviere, A. (2023) *Game Audio Mixing: Insights to Improve Your Mixing Performance*, Oxford, Taylor & Francis Ltd  
+- Audio in Unreal Engine 5 | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/audio-in-unreal-engine-5 (Accessed  12/04/2025).
+- How To Create A Dynamic Footstep System In Unreal Engine (Tutorial) (2024) At: https://www.youtube.com/watch?v=KUhOUkLCfgc (Accessed  28/04/2025).
+- How To Make A Jump Pad - Unreal Engine Tutorial (2021) At: https://www.youtube.com/watch?v=EClWaR7k0qI (Accessed  17/02/2025).
+- Random audio file playback in MetaSound - Unreal Engine 5 Game Audio (2023) At: https://www.youtube.com/watch?v=2r81xQLqoBg (Accessed  28/04/2025).
+- Roll a Ball | Unreal Engine 5 Tutorial | With & Without Physics (2023) At: https://www.youtube.com/watch?v=J_i6GZbtmwU (Accessed  17/02/2025).
+- Unreal Engine 5 | Ultimate Dynamic Music System (2024) At: https://www.youtube.com/watch?v=faacw592YGk (Accessed  28/04/2025).
+- Playdead’s INSIDE, An Analysis (Full Spoilers) (2016) At: https://oddendum.wordpress.com/2016/07/14/playdeads-inside-an-analysis-full-spoilers/ (Accessed  28/04/2025).
+- Editor, A. B. F. D. and Bell, A. (2022) 'RPS GOTY Revisited: 2007’s Portal remains a lodestar for very good games' In: Rock, Paper, Shotgun 04/03/2022 At: https://www.rockpapershotgun.com/rps-goty-revisited-2007s-portal-remains-a-lodestar-for-very-good-games (Accessed  28/04/2025).
+
+
+
 
 ## Declared Assets
 
