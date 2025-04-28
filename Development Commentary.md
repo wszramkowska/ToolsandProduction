@@ -238,34 +238,35 @@ One technical difficulty I encountered when implementing my audio is working wit
 ## Reflection (Suggested Word Count 500)
 
 ### Research Effectiveness
-- Assess the usefulness of the research conducted during the project.  
-- Highlight which sources (games, academic, documentation) had the most significant impact on your work and explain why.  
-- Identify any research gaps or areas where additional information could have improved your project outcomes.  
+ 
 
 Overall the research I did throughout the project was highly beneficial, specifically the documentation and youtube tutorials I referred to throughout the project. These provided technical guidance, enabling me to design and implement the audio systems effectively. However, there are areas where additional research could have enhanced the project, particularly in interactive sound design and the deeper integration of narrative through audio. While these gaps did not significantly hinder the project, addressing them in future work could further elevate the audio experience and player engagement.
 
 ### Positive Analysis
-- Reflect on the successful aspects of the project.  
-- Highlight specific elements that worked well, such as technical solutions, creative decisions, or user feedback.  
-- Provide evidence to support your analysis, such as test results, screenshots, or user comments.  
 
 I think a successful part of the project was creating systems that designers could easily use in their levels. The dynamic footstep system only required a physics material and some sounds to use which made the work of level designers much easier. 
 
-The Metasound sources which randomised audio was also made to assist designers, they wouldn't have to program anything to randomise sounds and could instead use these Metasounds, popping them wherever they needed in their level, or adding them into their blueprints.
+The Metasound sources which randomised audio was also made to assist designers, they wouldn't have to program anything to randomise sounds and could instead use these Metasounds, implementing them wherever they needed in their level, or adding them into their blueprints.
 
 Throughout the project I kept good communication with the team and offered my help with technical problems such as github, or building the project.
 
 Overall I think my role in supporting the designers for this project helped in some parts to streamline the production of the game and reduce technical difficulties where possible. 
 
 ### Negative Analysis
-- Identify the areas of the project that did not go as planned or could have been improved.  
-- Discuss challenges you faced, whether technical, creative, or time-related, and evaluate their impact on the final product.  
-- Reflect on any mistakes or missteps and what you learned from them.  
+
+As it was our first big team project, there was a steep learning curve in efficiency and communication. Whilst some members were consistently communicative, others were less responsive, which occasionally caused an imbalance and made it difficult to coordinate tasks effectively. This led to delays and additional pressure during the final stages of the project.
+
+Another significant challenge was the timing of audio integration. Since audio typically comes at the end of the production pipeline, I was unable to access finished levels until quite late in the project timeline. This limited the amount of time available for implementing, testing, and adjusting the audio to fit the final environments. In some cases, I also had to quickly source or create new sounds to match unexpected design changes, which affected the overall polish of the final product.
+
+Despite these challenges, the experience taught me the importance of early communication and flexible workflows when working on audio in a collaborative project.
 
 ### Next Time
-- Outline what you would do differently if you were to undertake a similar project again.  
-- Suggest improvements to your workflow, research methods, or implementation process based on your reflections.  
-- Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.  
+
+If I was to do this project again, I would prioritise setting up clearer communication at the start. Establishing regular meetings or check ins could help production progress. I also think there should be more specific deadlines assigned to individuals or teams, for example level designers having a finalised blockout by a certain week.
+
+Another thing I would do is spend more time learning audio editing software such as Adobe Audition. I didn't have any experience prior to this project, and I didn't fully realise how detailed this software can get until I started working in it. I think not knowing how to efficiently edit audio slowed me down a bit.
+
+
 
 ## Bibliography
 - Compile a complete list of all sources referenced throughout your project. This may include articles, journals, videos, games, software, documentation, or any other materials.  
